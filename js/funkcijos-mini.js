@@ -18,7 +18,7 @@
         if (a < b) {
         return 'Antras skaičius yra didesnis';
     }   
-        if (a = b) {
+        if (a === b) {
         return 'Skaičiai yra lygūs';
         }
         
@@ -88,7 +88,7 @@ console.log(sumaIntervale(6));
         }
             let count = 0;
 
-        for (let i=-skaicius1; i<skaicius1; i++){
+        for (let i=2; i<skaicius1; i++){
             if ((skaicius1 % i ===0) && (i !== 1)) {
                 count++;
             }
