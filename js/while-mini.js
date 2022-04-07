@@ -1,11 +1,15 @@
 //1. Generuoti atsitiktinius skaičius nuo 1 iki 10 tol, kol skaičių suma bus mažesnė už 100.
 
-let i = 0;
-while (i<=10){
-  console.log(i);
-  i++
+  function rand(min, max) {   
+  return Math.floor(Math.random()*(max-min+1)+min);
 }
-
+  let sum=0;
+  let i=0;
+  while (sum<100) {
+    const rezultatas = sum += rand(1, 10);
+    console.log(rezultatas);
+  }
+ 
 
 
 //2. Generuoti atsitiktinius skaičius nuo 1 iki 10 tol, kol sugeneruotų skaičių suma bus dali iš 7.
